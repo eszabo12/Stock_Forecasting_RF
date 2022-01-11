@@ -8,8 +8,12 @@ Date: 12/4/2017
 
 import matplotlib.pyplot as plt
 import numpy as np
-from Stock_Forecaster.fit_model_functions import fit_model, fit_model_cross_validation
-from Stock_Forecaster.helper_functions import date_range, create_shifted_orderbook, read_txt, get_curr_date
+import fit_model_functions
+from fit_model_functions import fit_model, fit_model_cross_validation
+import helper_functions
+from helper_functions import date_range, create_shifted_orderbook, read_txt, get_curr_date
+# from Stock_Forecaster.fit_model_functions import fit_model, fit_model_cross_validation
+# from Stock_Forecaster.helper_functions import date_range, create_shifted_orderbook, read_txt, get_curr_date
 from sklearn.ensemble import RandomForestClassifier
 
 if __name__ == "__main__":
